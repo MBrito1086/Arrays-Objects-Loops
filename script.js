@@ -99,23 +99,20 @@ Your function should return [ "v5", "x67", "r34", "f456", "p78" ];
 let numberVals = [ 5, 67, 34, 456, 78 ];
 let letterVals = [ "v", "x", "r", "f", "p" ];
 
-function interleave(){
+function interleave() {
     let vals = [];
     // Your answer here:
-    for (let i = 0; i < (letterVals.length,numberVals.length); i++) {
-      interleave.push(letterVals[i],numberVals[i]);
-    return (letterVals[i],numberVals[i])
+    for (let i = 0; i < numberVals.length; i++) {
+        vals.push(letterVals[i] + numberVals[i])
   }
+  return vals
 }
 
 
 
 
+// 8. Iterate over the "first" and "second" arrays. Compare the values for both arrays. If the arrays values are the same, then store that value in the "same" array. Return "same".
 
-
-/*
-8. Iterate over the "first" and "second" arrays. Compare the values for both arrays. If the arrays values are the same, then store that value in the "same" array. Return "same".
-*/
 
 let first = [ "blink", "stand", "glasses", "chair", "numinous", "adjacent", "bracelet", "hand" ];
 let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close", "toe" ];
@@ -123,4 +120,18 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
+    for (var i = 0; i < first.length; i++) {
+      if (first[i] === second[i]) {
+        same.push(first[i])
+      }
+    }
+    // for (var i = 0; i < second.length; i++) {
+    // }
+    return same
 }
+
+
+
+
+
+//
